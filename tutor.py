@@ -1,22 +1,23 @@
 from tkinter import *
 from tkinter.messagebox import *
+#import userdata
+from userdata import *
+
 
 app = Tk()
 # Message Window
 
 def messagePop():
 
-    tutor = ['Bob Smith', 'Prof Stuart Allen', 'Alan Chan', 'Helen Philips', 'Martha Williams', 'Dr Matt Morgan']
-
     get_data()
 
-    for item in tutor:
-        if item.find('Bob Smith'):
-            messagebox.showinfo('Result', 'Prof Stuart Allen')
-        elif item.find('Alan Chan'):
-            messagebox.showinfo('Result', 'Helen Philips')
-        elif item.find('Martha Williams'):
-            messagebox.showinfo('Result', 'Dr Matt Morgan')
+    for item in tutorlist:
+        if item.find('Zachariah Butler'):
+            messagebox.showinfo('Result', 'Alia I Abdelmoty')
+        elif item.find('Samuel East'):
+            messagebox.showinfo('Result', 'Martin Caminada')
+        elif item.find('Robin Watson'):
+            messagebox.showinfo('Result', 'Matthew John')
 
     #if tutor[0]:
         #messagebox.showinfo('Result', tutor[1])
