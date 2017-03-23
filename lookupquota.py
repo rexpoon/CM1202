@@ -7,9 +7,7 @@ Available quotas for Matt: 0
 """
 #C1670764
 from collections import Counter
-
-assignment = {"Jack":["Simon Hui","Ivan Shum","Rex Poon"],"Matt":["William Cooter","Ameilia Huggons","Zifan Zhao","Sophie Coverdale"]}
-
+import system
 
 def lookupquota(dictionary,quota):
 	for item in dictionary:
