@@ -6,18 +6,26 @@ app = Tk()
 
 def messagePop():
 
-    tutor = ['Bob Smith', 'Prof Stuart Allen', 'Alan Chan', 'Helen Philips', 'Martha Milton', 'Matt Morgan']
+    tutor = ['Bob Smith', 'Prof Stuart Allen', 'Alan Chan', 'Helen Philips', 'Martha Williams', 'Dr Matt Morgan']
 
     get_data()
 
-    if tutor[0]:
-        messagebox.showinfo('Result', tutor[1])
+    for item in tutor:
+        if item.find('Bob Smith'):
+            messagebox.showinfo('Result', 'Prof Stuart Allen')
+        elif item.find('Alan Chan'):
+            messagebox.showinfo('Result', 'Helen Philips')
+        elif item.find('Martha Williams'):
+            messagebox.showinfo('Result', 'Dr Matt Morgan')
 
-    elif tutor[2]:
-        messagebox.showinfo('Result', tutor[3])
+    #if tutor[0]:
+        #messagebox.showinfo('Result', tutor[1])
 
-    elif tutor[4]:
-        messagebox.showinfo('Result', tutor[5])
+    #elif tutor[2]:
+        #messagebox.showinfo('Result', tutor[3])
+
+    #elif tutor[4]:
+        #messagebox.showinfo('Result', tutor[5])
     #messagebox.showinfo('Result', tutor)
     
 
@@ -26,9 +34,6 @@ def messagePop():
 app.configure(bg='cornflower blue')
 
 COLORS  =['blue', 'gold', 'cornflower blue']
-
-#['Bob Smith', 'Prof Stuart Allen',
-#'Alan Chan', 'Helen Philips']
 
 # The position and size relative to the screen
 app.geometry('500x500+450+140')
