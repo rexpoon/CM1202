@@ -1,5 +1,5 @@
 # All Python functions should use this assignment dictionary!
-# Use import * from assignment at the front of your Python file
+# Put "from userdata import *" at the front of your Python file
 
 #Current assignment - format:{tutorname:[studentname1,studentname2]}
 assignment = {"Alia I Abdelmoty":["Zachariah Butler","Joshua Davies","Samuel Healey"],"Martin Caminada":["Ahamed Abdul Kayee","Alex Cheung","Samuel East"],"Matthew John":["Charlie Bennett","Kieran Fewell","Robin Watson","Joshua Wong"],"Yukun Lai":["Mia Davis","Lloyd Francis","Nicole Kan"], "Kirill Sidorov":["Zachary Allen","Giorgos Andreou","Max Milburn"]}

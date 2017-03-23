@@ -1,7 +1,7 @@
 #C1670764
 
 from collections import Counter
-import system
+from userdata import *
 
 
 def lookupquota(dictionary):
