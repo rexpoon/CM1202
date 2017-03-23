@@ -42,7 +42,7 @@ app.geometry('500x500+450+140')
 app.title('Search tutor for individual student')
 
 # The icon
-app.wm_iconbitmap('MathIcon.ico')
+#app.wm_iconbitmap('MathIcon.ico')
 
 # Object positioning in the program
 # def GridPos:
