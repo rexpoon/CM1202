@@ -11,7 +11,7 @@ def messagePop():
 
     get_data()
 
-    for item in tutorlist:
+    for item in assignment:
         if item.find("Zachariah Butler"):
             messagebox.showinfo("Result", "Alia I Abdelmoty")
         elif item.find("Samuel East"):
