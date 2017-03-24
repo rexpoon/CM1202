@@ -34,7 +34,7 @@ COLORS  =['blue', 'gold', 'cornflower blue']
 app.geometry('500x500+450+140')
 
 # The title of the program
-app.title('Search tutor for individual student')
+app.title('Delete student')
 
 
 # Object positioning in the program
