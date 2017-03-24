@@ -4,16 +4,20 @@ import random
 
 
 
-from userdata import *
+from userdata1 import *
 
 
 
 app = Tk()
 # Message Window
+AliaIAbdelmoty = assignment["Alia I Abdelmoty"]
+MartinCaminada = assignment["Martin Caminada"]
+MatthewJohn = assignment["Matthew John"]
+
 
 
 def messagePop():
-
+	global MartinCaminada
 	get_data()
 
 	name=x.get()
@@ -21,14 +25,17 @@ def messagePop():
 		for v in value:
 			if name in v:
 				messagebox.showinfo("Delete Student",v+" has been deleted from the group of tutor: "+key+". "+v+" has been re-assign to the group of tutor: "+z.get())
+			
+			if v == "Alex Cheung":
+				del MartinCaminada[1]
+				print (MartinCaminada)
 
 
 
-	if v = "Alex Cheung"
-		del Ma
-	del assignment[key]
 
 
+	assignment[z.get()].append(name)
+	print (assignment[z.get()])
 
 
 
