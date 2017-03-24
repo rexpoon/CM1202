@@ -4,7 +4,6 @@ from tutor import *
 from lookupquota import *
 from delstudent import *
 
-
 TITLE_FONT = ("Helvetica", 18, "bold")
 
 class SampleApp(tk.Tk):
