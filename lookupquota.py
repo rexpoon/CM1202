@@ -6,12 +6,13 @@ from tkinter import *
 from tkinter.messagebox import *
 
 app = Tk()
-box = Listbox(app, width=75)
-box.insert(0,"Tutor Name, Assigned tutees, Assigned quota, Available quota")
+label=Label(app,text="Tutor Name, Assigned tutees, Assigned quota, Available quota")
+box = Listbox(app, width=30)
+
 
 def lookupquota():
-	dictionary = assignment
-	i = 1
+	dictionary = assignment		#can customise the  
+	i = 0
 	for item in dictionary:
 		assigned= len(dictionary[item])
 		for key in tutorlist:
@@ -24,13 +25,15 @@ def lookupquota():
 		else:
 			raise Exception("The quota of a tutor has not been specified. Please check the userdata.")
 		available= (quota-assigned)
-		exportlist=[item, assigned, quota, available]
+		exportlist=[item, assigned, quota, available]	#can customise the output
 		box.insert(i,exportlist)
 		i += 1
 
 app.title('Quotas of tutees of every staff member')
 app.geometry('500x500+450+140')
 app.configure(bg='cornflower blue')
+
+label.pack()
 box.pack(command=lookupquota())
 
 
