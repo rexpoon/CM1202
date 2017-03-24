@@ -30,6 +30,10 @@ def messagePop():
 				del MartinCaminada[1]
 				print (MartinCaminada)
 
+			if v == "Ahamed Abdul Kayee":
+				del MartinCaminada[0]
+				print (MartinCaminada)
+
 
 
 
