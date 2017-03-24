@@ -20,8 +20,13 @@ def messagePop():
 	for key, value in assignment.items():
 		for v in value:
 			if name in v:
-				messagebox.showinfo("Delete Student",v+" has been deleted from the group of tutor: "+key+". "+v+"has been re-assign to the group of tutor: "+z.get())
+				messagebox.showinfo("Delete Student",v+" has been deleted from the group of tutor: "+key+". "+v+" has been re-assign to the group of tutor: "+z.get())
 
+
+
+	if v = "Alex Cheung"
+		del Ma
+	del assignment[key]
 
 
 
@@ -56,6 +61,6 @@ z.place(x=120,y=220)
 
 
 # Buttons
-B1 = Button(app,text='Search',bg='gold',fg='blue', command = messagePop).place(x=425,y=450)
+B1 = Button(app,text='Submit',bg='gold',fg='blue', command = messagePop).place(x=425,y=450)
 
 app.mainloop()
