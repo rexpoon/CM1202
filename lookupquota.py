@@ -6,8 +6,8 @@ from tkinter import *
 from tkinter.messagebox import *
 
 app = Tk()
-label=Label(app,text="Tutor Name, Assigned tutees, Assigned quota, Available quota")
-box = Listbox(app, width=30)
+label=Label(app,text="Tutor Name,Assigned group, Assigned tutees, Assigned quota, Available quota")
+box = Listbox(app, width=50)
 
 
 def lookupquota():
@@ -20,12 +20,14 @@ def lookupquota():
 				tuteeclass = tutorlist[key]
 		if tuteeclass == 0:
 			quota = UGquota
+			group = "UG"
 		elif tuteeclass == 1:
 			quota = PGquota
+			group = "PG"
 		else:
 			raise Exception("The quota of a tutor has not been specified. Please check the userdata.")
 		available= (quota-assigned)
-		exportlist=[item, assigned, quota, available]	#can customise the output
+		exportlist=[item, group, assigned, quota, available]	#can customise the output
 		box.insert(i,exportlist)
 		i += 1
 
